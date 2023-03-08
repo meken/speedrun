@@ -21,11 +21,10 @@ const logger = bunyan.createLogger({
   ],
 });
 
-/* GET users listing. */
 router.get('/', function (req, res, next) {
   
   // ↓↓ UNCOMMENT TO WRITE Hello World TO LOGS 
-   console.log("Hello World");
+  //  console.log("Hello World");
   // ↑↑
   
   // If you write logs to standard out in a specific JSON format, 
@@ -33,8 +32,8 @@ router.get('/', function (req, res, next) {
   // example shows you how to use @google-cloud/logging-bunyan
 
   // ↓↓ UNCOMMENT FOR STRUCTURED LOGS 
-   logger.error('Hello World at ERROR level');
-   logger.info('Hello World at INFO level');
+  //  logger.error('Hello World at ERROR level');
+  //  logger.info('Hello World at INFO level');
   // ↑↑                               
 
   res.type('text');
