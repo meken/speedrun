@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --watchAll"    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "@google-cloud/run": "^0.4.1",
+    "googleapis": "^112.0.0",
+    "inquirer": "^8.2.5"
+  },
+  "jest": {
+    "testTimeout": 15000
+  }
+}
