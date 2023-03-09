@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const indexRouter = require('./routes/index');
 const loggingRouter = require('./routes/logging');
 const sqlRouter = require('./routes/sql');
+const firestoreRouter = require('./routes/firestore');
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/logging', loggingRouter);
 app.use('/sql', sqlRouter);
+app.use('/firestore', firestoreRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
