@@ -19,4 +19,4 @@ test('expect a log "Hello World" from a Cloud Run container', async () => {
     expect(helloLogs.length).toBeGreaterThanOrEqual(1)
 })
 
-test.skip('expect a log "Hello World" with different severity levels', async () => { })
+// test.skip('expect a log "Hello World" with different severity levels', async () => { })

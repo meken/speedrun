@@ -18,4 +18,4 @@ test('expect one container image in Artifact Registry', async () => {
     expect(images.length).toBeGreaterThanOrEqual(1)
 })
 
-test.skip('expect one new revision with the new image', () => {})
+// test.skip('expect one new revision with the new image', () => {})
